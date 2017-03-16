@@ -14,6 +14,6 @@
 </head>
 <body>
 	<a href="<%=basepath %>demo/session.jsp">Session 知识点介绍</a>
-	<%=request.getSession(false)%>
+	<a href="<%=basepath %>demo/login.jsp">Session小示例</a>
 </body>
 </html>
