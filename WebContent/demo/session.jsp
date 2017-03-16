@@ -8,6 +8,15 @@
 </head>
 <body>
 	
-	<%= request.getSession(false)%>
+	<% 
+		//HttpSession session = request.getSession(false);
+		//HttpSession session = request.getSession(); //<=>request.getSession(true)
+	    HttpSession session = request.getSession(true);
+		session.setMaxInactiveInterval(5);//设置session的过期时间
+		out.print(session.getId());
+		out.print("<br/>");
+		out.print(session.getMaxInactiveInterval());
+		
+	%>
 </body>
 </html>
