@@ -29,7 +29,7 @@ Session在Web开发环境下的语义又有了新的扩展，它的含义是指�
 
 1. 使用Cookie: 保存session id的方式可以采用cookie，这样在交互过程中浏览器可以自动的按照规则把这个标识发送给服务器，这种cookie称为session cookie。
 如下图:
-<img src="/img/session/sessioncookie.png">
+![](http://blog.tommyyang.cn/img/session/sessioncookie.png)
 
 2. URL重写: 由于cookie可以被人为的禁用，必须有其它的机制以便在cookie被禁用时仍然能够把session id传递回服务器，
    经常采用的一种技术叫做URL重写，就是把session id附加在URL路径的后面，附加的方式也有两种，一种是作为URL路径的附加信息，
